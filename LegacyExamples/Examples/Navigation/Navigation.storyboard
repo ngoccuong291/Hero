@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13770" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Yym-df-Bre">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Yym-df-Bre">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13770"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -41,19 +41,19 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="5nz-JV-JCb">
-                                <rect key="frame" x="282" y="236" width="51" height="31"/>
+                                <rect key="frame" x="282" y="236.5" width="51" height="31"/>
                                 <connections>
                                     <action selector="toggleIsHeroEnabled:" destination="69h-JX-TSU" eventType="valueChanged" id="1fs-wN-eB5"/>
                                 </connections>
                             </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="isHeroEnabled" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ykx-Eh-Ggw">
-                                <rect key="frame" x="44" y="241" width="111" height="21"/>
+                                <rect key="frame" x="44" y="241.5" width="111" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Ea-6N-A5Q">
-                                <rect key="frame" x="171" y="597" width="32" height="30"/>
+                                <rect key="frame" x="171.5" y="597" width="32" height="30"/>
                                 <state key="normal" title="Next"/>
                                 <connections>
                                     <segue destination="h5j-9x-2rK" kind="show" id="vdW-7w-bQq"/>
@@ -100,13 +100,13 @@
         <!--Second-->
         <scene sceneID="TmG-c4-V7B">
             <objects>
-                <viewController id="h5j-9x-2rK" sceneMemberID="viewController">
+                <viewController id="h5j-9x-2rK" customClass="SecondViewController" customModule="Hero" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bZq-Ak-jNh">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="idh-Iq-CSj">
-                                <rect key="frame" x="147.5" y="250" width="80" height="168"/>
+                                <rect key="frame" x="147.5" y="249.5" width="80" height="168"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="140"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -114,19 +114,31 @@
                                     <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="item"/>
                                 </userDefinedRuntimeAttributes>
                             </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gf4-9u-HfL">
+                                <rect key="frame" x="16" y="116" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="gf4-9u-HfL" firstAttribute="leading" secondItem="X6y-3S-Z2j" secondAttribute="leading" constant="16" id="Jnv-Ka-ng7"/>
+                            <constraint firstItem="X6y-3S-Z2j" firstAttribute="trailing" secondItem="gf4-9u-HfL" secondAttribute="trailing" constant="16" id="SCC-pR-oFS"/>
+                            <constraint firstItem="gf4-9u-HfL" firstAttribute="top" secondItem="X6y-3S-Z2j" secondAttribute="top" id="a1B-se-Dou"/>
                             <constraint firstItem="idh-Iq-CSj" firstAttribute="centerY" secondItem="bZq-Ak-jNh" secondAttribute="centerY" id="oGk-ZK-aqg"/>
                             <constraint firstItem="idh-Iq-CSj" firstAttribute="centerX" secondItem="bZq-Ak-jNh" secondAttribute="centerX" id="q2r-12-MCn"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="X6y-3S-Z2j"/>
                     </view>
                     <navigationItem key="navigationItem" title="Second" id="Zp5-W6-Wfc"/>
+                    <connections>
+                        <outlet property="testTextField" destination="gf4-9u-HfL" id="1b7-r3-rFQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QWf-5l-0YJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1161" y="233"/>
+            <point key="canvasLocation" x="1160.8" y="232.53373313343329"/>
         </scene>
     </scenes>
 </document>

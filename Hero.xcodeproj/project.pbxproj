@@ -44,6 +44,7 @@
 		5C5442AA2004092500E1E326 /* HeroCompatible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C69728F2002CDBD001A5051 /* HeroCompatible.swift */; };
 		5C6972902002CDBD001A5051 /* HeroCompatible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C69728F2002CDBD001A5051 /* HeroCompatible.swift */; };
 		83043017B73BC66DBB920D5C /* Pods_HeroExamples.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEE340F89FF0A49DD23A5A6E /* Pods_HeroExamples.framework */; };
+		891BB4F322D4551500182B23 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891BB4F222D4551500182B23 /* SecondViewController.swift */; };
 		A304BF841DF2717900A03345 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A304BF831DF2717900A03345 /* ImageViewController.swift */; };
 		A304BF8A1DF647FC00A03345 /* ImageCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = A304BF891DF647FC00A03345 /* ImageCells.swift */; };
 		A306D3B61E1C7A2E00B6C23A /* Hero.h in Headers */ = {isa = PBXBuildFile; fileRef = A306D3B41E1C7A2E00B6C23A /* Hero.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -216,6 +217,7 @@
 		5C69728F2002CDBD001A5051 /* HeroCompatible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroCompatible.swift; sourceTree = "<group>"; };
 		5CD4F09A588E81DA75C2BE38 /* Pods-HeroExamples.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HeroExamples.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HeroExamples/Pods-HeroExamples.debug.xcconfig"; sourceTree = "<group>"; };
 		86C87C73D89E75C8443B5071 /* Pods-HeroTvOSExamples.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HeroTvOSExamples.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HeroTvOSExamples/Pods-HeroTvOSExamples.debug.xcconfig"; sourceTree = "<group>"; };
+		891BB4F222D4551500182B23 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		A304BF831DF2717900A03345 /* ImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
 		A304BF891DF647FC00A03345 /* ImageCells.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCells.swift; sourceTree = "<group>"; };
 		A306D3B21E1C7A2E00B6C23A /* Hero.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Hero.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -645,6 +647,7 @@
 			children = (
 				B147F2631FAEA8F0006475A3 /* FirstViewController.swift */,
 				B147F2641FAEA8F0006475A3 /* Navigation.storyboard */,
+				891BB4F222D4551500182B23 /* SecondViewController.swift */,
 			);
 			path = Navigation;
 			sourceTree = "<group>";
@@ -835,6 +838,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -916,7 +920,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-HeroExamples/Pods-HeroExamples-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-HeroExamples/Pods-HeroExamples-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/ChameleonFramework/ChameleonFramework.framework",
 				"${BUILT_PRODUCTS_DIR}/CollectionKit/CollectionKit.framework",
 			);
@@ -927,7 +931,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HeroExamples/Pods-HeroExamples-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HeroExamples/Pods-HeroExamples-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		89DC76B30A0BF7FD724C24D3 /* [CP] Check Pods Manifest.lock */ = {
@@ -1055,6 +1059,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				891BB4F322D4551500182B23 /* SecondViewController.swift in Sources */,
 				B1193AB61E525CD8005B1C87 /* HeroViewPropertyViewContext.swift in Sources */,
 				A37D7B4B1E2C0C9300AC1959 /* Array+HeroModifier.swift in Sources */,
 				A37D7B4D1E2C0C9300AC1959 /* CAMediaTimingFunction+Hero.swift in Sources */,
